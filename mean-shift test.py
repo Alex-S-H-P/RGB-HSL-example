@@ -100,7 +100,7 @@ def animate(k):
 anim = animation.FuncAnimation(fig, animate,
                                frames=15, interval=250, blit=True)
 
-writer = PillowWriter(fps=25)
+writer = PillowWriter(fps=4)
 anim.save('myAnimation.gif', writer)
 plt.show()
 #
